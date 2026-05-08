@@ -11,5 +11,10 @@ fi
 \cp -rf my_files/.config openwrt/.config
 
 cd openwrt/
-git clone --depth 1 --branch master --single-branch --no-tags --recurse-submodules https://github.com/fantastic-packages/packages package/fantastic_packages
+
+# fantastic_packages
+if [ ! -d package/fantastic_packages ]; then
+    git clone --depth 1 --branch master --single-branch --no-tags --recurse-submodules https://github.com/fantastic-packages/packages package/fantastic_packages
+fi
+
 bash ../mtk-openwrt-feeds/autobuild/unified/autobuild.sh build
