@@ -4,3 +4,14 @@
 # Editor backups / temp
 *~
 *.swp
+
+# OpenWrt build tree (nested repo, full build output)
+openwrt/
+
+# Mediatek feeds (nested repo)
+mtk-openwrt-feeds/
+
+# Build artifacts
+*.o
+*.ko
+*.bin
