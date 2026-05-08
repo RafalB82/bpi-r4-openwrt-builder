@@ -459,3 +459,4 @@ CONFIG_USE_LTO=y
 CONFIG_USE_MOLD=y
 CONFIG_WPA_MSG_MIN_PRIORITY=2
 # CONFIG_PACKAGE_kmod-crypto-kpp is not set
+CONFIG_PACKAGE_luci-theme-argon=y
